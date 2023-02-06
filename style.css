@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+a{
+    color: white;
+    text-decoration: none;
+
+}
+
+#gameBord{
+    width: 100%;
+    height: 100%;
+    background-color:white;
+    /* margin: 1rem; */
+    border: 1rem solid black;
+    grid-template-rows:repeat(14, 1fr) ;
+    grid-template-columns:repeat(20, 1fr) ;
+}
+.assets{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* margin: 1rem; */
+    border: 1rem solid black;
+}
+#tools{
+    width: 100%;
+    height: 95%;
+    background-color:white;
+    /* margin: 1rem; */
+    display: flex;
+    flex-direction: column;
+}
+#inventory{
+    width: 100%;
+    height: 100%;
+    background-color:white;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.btn{
+    background-color: rgb(14, 76, 76);
+    padding: 1rem 1rem;
+    border-radius: 10%;
+}
+
+.btn:hover{
+    background-color: teal;
+    padding: 1rem 1rem;
+}
+#axe{
+    width: 5%;
+    height: 100%;
+    background-image:url(/assets/images/tools/axe.png);
+}
+#shoval{ width: 5%;
+    background-image:url(/assets/images/tools/shovel.png);
+}
+#hoe{ width: 5%;
+    background-image:url(/assets/images/tools/hoe.png);}
+.snow{
+    background-image:url(/assets/images/materials/snow.png);
+}
+.snowyGrass{background-image:url(/assets/images/materials/snowyGrass.png);
+}
+.cactus{background-image:url(/assets/images/materials/cactus.png);
+}
+.stone{background-image:url(/assets/images/materials/stone.png);
+}
+.dirt{background-image:url(/assets/images/materials/dirt.png);
+}
+
+
